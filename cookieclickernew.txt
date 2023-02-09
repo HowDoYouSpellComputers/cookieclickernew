@@ -17,7 +17,7 @@ Layout
 	use default
 		
 Buttons
-	*cookie
+	*cookieclicker
 		name:Make a cookie
 		desc:Click this cookie to make more cookies
 		on click:anim icon wobble
