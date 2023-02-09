@@ -105,7 +105,6 @@ Buildings
 		icon:icons[3,7]
 		cost:70000000 cookies
 		on tick:yield 4000 cookies
-		on tick:if (have moonGardens) yield 0.01 goldenCarrot
 		req:70000000 cookies:earned
 		
 	*fortress
