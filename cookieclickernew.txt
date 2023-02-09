@@ -38,35 +38,7 @@ Resources
 		class:noBackground
 		show earned
 		
-	*goldencookie|goldencookies
-		name:Golden Cookie|Golden Cookies
-		desc:These shiny cookets are terribly rare, terribly precious and terribly delicious!
-		icon:https://i.pinimg.com/originals/cf/d3/d8/cfd3d8bee6854d492f83f3eb7c6fb483.png
-		class:noBackground
-		hidden when 0
-		
-Shinies
-	*luckyBunny
-		on click:log Woop
-		movement:onRight moveLeft fade bounce:0.05
-		frequency:60
-		frequency variation:30
-		icon:https://i.pinimg.com/originals/cf/d3/d8/cfd3d8bee6854d492f83f3eb7c6fb483.png
-		class:bigButton
-		on click:
-			$boost=1
-			if (have clover) $boost=4
-			if (chance(25%))
-				//get at least 7, or between 1 and 3 minutes of our bunny production
-				$amount=max(7,random(bunnies:ps*60*1,bunnies:ps*60*3))*$boost
-				toast The lucky cookie grants you<//><b>[$amount] cookies</b>.
-				yield $amount bunnies
-			else
-				$amount=1*$boost
-				toast The lucky bunny grants you<//><b>[$amount] golden cookie[s?$amount]</b>!
-				yield $amount goldencookie
-			end
-		end
+	
 
 Buildings
 	*TEMPLATE
